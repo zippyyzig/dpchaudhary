@@ -25,11 +25,6 @@ export default function ContactSection() {
       label: t('contact.email'),
       value: 'contact@dpchaudhary.in',
     },
-    {
-      icon: MapPin,
-      label: t('contact.address'),
-      value: t('contact.address_val'),
-    },
   ]
 
   return (
