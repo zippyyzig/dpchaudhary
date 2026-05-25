@@ -57,7 +57,13 @@ export default function HeroSection() {
             </p>
 
             <p className="text-sm sm:text-base text-white/75 leading-relaxed max-w-md mx-auto md:mx-0">
-              {t('hero.subtitle')}
+              DP Chaudhary — {language === 'en'
+                ? 'dedicated to development, social welfare, youth empowerment, and community service through people-centric leadership.'
+                : 'विकास, समाज कल्याण, युवा सशक्तिकरण और जनकेंद्रित नेतृत्व के माध्यम से समुदाय सेवा के लिए समर्पित।'}
+            </p>
+
+            <p className="text-[oklch(0.88_0.14_72)] font-serif text-sm italic">
+              {language === 'en' ? '"जनता के साथ • जनता के लिए"' : '"जनता के साथ • जनता के लिए"'}
             </p>
 
             {/* BJP tri-color divider */}
@@ -83,7 +89,7 @@ export default function HeroSection() {
             </div>
 
             <p className="text-[oklch(0.88_0.14_72)] font-serif text-sm italic">
-              {language === 'en' ? '"Sabka Saath, Sabka Vikas"' : '"सबका साथ, सबका विकास"'}
+              {language === 'en' ? '"Sabka Saath, Sabka Vikas, Sabka Vishwas"' : '"सबका साथ, सबका विकास, सबका विश्वास"'}
             </p>
           </div>
 

@@ -125,3 +125,9 @@
 .gold-border {
   border-image: linear-gradient(90deg, var(--gold), var(--bjp-saffron)) 1;
 }
+
+/* Ken-burns zoom for story slides */
+@keyframes kenburns {
+  0% { transform: scale(1.1); }
+  100% { transform: scale(1.0); }
+}

@@ -44,8 +44,8 @@ export default function Footer() {
             </p>
             <p className="text-[oklch(0.78_0.14_72)] font-serif text-sm italic">
               {language === 'en'
-                ? '"Service to the people is service to God"'
-                : '"जन सेवा ही ईश्वर सेवा है"'}
+                ? '"Service to the people is service to God" — Official website of DP Chaudhary, Kurukshetra, Haryana'
+                : '"जन सेवा ही ईश्वर सेवा है" — डीपी चौधरी, कुरुक्षेत्र, हरियाणा की आधिकारिक वेबसाइट'}
             </p>
           </div>
 
