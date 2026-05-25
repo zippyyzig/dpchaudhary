@@ -60,12 +60,18 @@ export default function KurukshetraSection() {
                   : '"यदा यदा हि धर्मस्य ग्लानिर्भवति भारत... तदात्मानं सृजाम्यहम्"'}
               </p>
               <footer className="text-[oklch(0.75_0.14_72)] text-xs sm:text-sm mt-2">
-                — {language === 'en' ? 'Bhagavad Gita, Chapter 4:7' : 'भगवद गीता, अध्याय 4:7'}
+                — {language === 'en' ? 'Bhagavad Gita, Chapter 4, Verse 7' : 'भगवद गीता, अध्याय 4, श्लोक 7'}
               </footer>
             </blockquote>
 
             <p className="text-[oklch(0.85_0.03_75)] text-sm sm:text-base leading-relaxed">
               {t('kurukshetra.desc')}
+            </p>
+
+            <p className="text-[oklch(0.82_0.14_72)] font-serif text-sm italic border border-[oklch(0.64_0.22_40/0.3)] rounded-xl p-4 bg-[oklch(0.18_0.05_250/0.5)]">
+              {language === 'en'
+                ? '"Kurukshetra is not only the land of history and spirituality — it is a living inspiration of truth, duty, culture, and eternal values."'
+                : '"कुरुक्षेत्र केवल इतिहास और आध्यात्मिकता की भूमि नहीं है — यह सत्य, कर्तव्य, संस्कृति और शाश्वत मूल्यों की जीवंत प्रेरणा है।"'}
             </p>
 
             <div className="relative rounded-xl overflow-hidden aspect-video shadow-xl">

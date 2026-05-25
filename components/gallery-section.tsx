@@ -105,7 +105,7 @@ export default function GallerySection() {
             {language === 'en' ? 'Photo Gallery' : 'फोटो गैलरी'}
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-foreground text-balance mb-4">
-            {language === 'en' ? 'On the Ground — With the People' : 'जनता के बीच — हर कदम पर'}
+            {language === 'en' ? 'Moments of Service, Leadership & Public Trust' : 'सेवा, नेतृत्व और जनविश्वास के क्षण'}
           </h2>
           <div className="flex items-center justify-center gap-0 w-24 h-1 rounded-full overflow-hidden mx-auto mb-6 sm:mb-8">
             <div className="flex-1 h-full bg-primary" />
