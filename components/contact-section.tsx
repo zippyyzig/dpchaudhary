@@ -21,11 +21,6 @@ export default function ContactSection() {
 
   const contactItems = [
     {
-      icon: Phone,
-      label: t('contact.phone'),
-      value: '+91 98765 43210',
-    },
-    {
       icon: Mail,
       label: t('contact.email'),
       value: 'contact@dpchaudhary.in',

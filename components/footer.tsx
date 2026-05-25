@@ -74,9 +74,8 @@ export default function Footer() {
               {t('nav.contact')}
             </h4>
             <div className="space-y-2.5 text-xs sm:text-sm text-[oklch(0.72_0.02_75)]">
-              <p>Kurukshetra, Haryana — 136118</p>
+              <p>Kurukshetra, Haryana</p>
               <p>contact@dpchaudhary.in</p>
-              <p>+91 98765 43210</p>
               <div className="flex gap-2 sm:gap-3 pt-2">
                 {['FB', 'TW', 'YT', 'IG'].map((s) => (
                   <a
