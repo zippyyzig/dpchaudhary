@@ -1,0 +1,127 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* BJP-inspired palette: saffron orange #FF6600, BJP green #138808, white, navy blue for lotus */
+  --background: oklch(0.99 0.003 80);
+  --foreground: oklch(0.15 0.02 250);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.02 250);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.02 250);
+
+  /* BJP Saffron Orange — primary (#FF6600 ≈ oklch 0.66 0.21 40) */
+  --primary: oklch(0.64 0.22 40);
+  --primary-foreground: oklch(1 0 0);
+
+  /* BJP Green — secondary (#138808 ≈ oklch 0.52 0.18 145) */
+  --secondary: oklch(0.52 0.17 145);
+  --secondary-foreground: oklch(1 0 0);
+
+  --muted: oklch(0.96 0.01 80);
+  --muted-foreground: oklch(0.48 0.04 250);
+
+  /* BJP Navy Blue accent for lotus — (#00008B ≈ oklch 0.28 0.2 260) */
+  --accent: oklch(0.30 0.18 260);
+  --accent-foreground: oklch(1 0 0);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+
+  --border: oklch(0.88 0.015 250);
+  --input: oklch(0.93 0.01 250);
+  --ring: oklch(0.64 0.22 40);
+
+  --radius: 0.625rem;
+
+  /* Sidebar — dark BJP navy */
+  --sidebar: oklch(0.15 0.04 250);
+  --sidebar-foreground: oklch(0.95 0.01 75);
+  --sidebar-primary: oklch(0.64 0.22 40);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.22 0.05 250);
+  --sidebar-accent-foreground: oklch(0.95 0.01 75);
+  --sidebar-border: oklch(0.28 0.05 250);
+  --sidebar-ring: oklch(0.64 0.22 40);
+
+  /* Custom brand tokens */
+  --bjp-saffron: oklch(0.64 0.22 40);
+  --bjp-green: oklch(0.52 0.17 145);
+  --bjp-navy: oklch(0.30 0.18 260);
+  --bjp-white: oklch(0.99 0 0);
+  --gold: oklch(0.78 0.14 72);
+  --cream: oklch(0.97 0.015 75);
+}
+
+@theme inline {
+  --font-sans: 'Noto Sans', 'Noto Sans Devanagari', 'Inter', sans-serif;
+  --font-serif: 'Noto Serif', 'Noto Serif Devanagari', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Devanagari font smooth rendering */
+.font-devanagari {
+  font-family: 'Noto Sans Devanagari', 'Noto Serif Devanagari', sans-serif;
+}
+
+/* BJP tri-color gradient used in hero overlays: saffron → dark navy */
+.saffron-gradient {
+  background: linear-gradient(135deg, oklch(0.64 0.22 40 / 0.88) 0%, oklch(0.15 0.04 250 / 0.82) 100%);
+}
+
+/* BJP flag tri-stripe accent */
+.bjp-stripe {
+  background: linear-gradient(90deg, var(--bjp-saffron) 0%, var(--bjp-saffron) 33%, oklch(0.99 0 0) 33%, oklch(0.99 0 0) 66%, var(--bjp-green) 66%);
+}
+
+.gold-border {
+  border-image: linear-gradient(90deg, var(--gold), var(--bjp-saffron)) 1;
+}
